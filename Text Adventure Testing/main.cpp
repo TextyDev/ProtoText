@@ -29,13 +29,14 @@ int main()
 void room1(){
     cout << r1;
     cin >> input;
-    if (input="n" || "north"){
+    if (input=="n" || "north"){
         roomN();
+    }
+    else {
+        cout << "Didn't get that.";
     }
 }
 
 void roomN(){
     cout << rN;
-    cin >> input;
-    cout >> " You lost buddy.\n Sucks to be you.\n Go try again."
 }
