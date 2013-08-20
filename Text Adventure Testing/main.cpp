@@ -29,7 +29,7 @@ int main()
 void room1(){
     cout << r1;
     cin >> input;
-    if (input=="n" || "north"){
+    if (input=="n" || input=="north"){
         roomN();
     }
     else {
