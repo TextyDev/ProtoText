@@ -6,12 +6,12 @@ using namespace std;
 
 string r1 = "\nYou wake up in a small room.\nThere are doors to the WEST, EAST, and NORTH.\nYou can see 3 COINS, a KNIFE, and a STICK on the floor.\n";
 
-string rN = "\nThis is a dead end.\nThe doorway seals shut.\nThere is no way out.\n";
+string r2 = "\nThis is a dead end.\nThe doorway seals shut.\nThere is no way out.\n";
 
 /*Room Functions go here*/
 
 void room1();
-void roomN();
+void room2();
 
 /*Store inputs here.*/
 
@@ -45,7 +45,7 @@ void room1(){
     cout << r1;
     cin >> input;
     if (input=="n" || input=="north"){
-        roomN();
+        room2();
     }
     else {
         cout << "\nDidn't get that.\n" << endl;
@@ -53,7 +53,7 @@ void room1(){
     }
 }
 
-void roomN(){
-    cout << rN;
+void room2(){
+    cout << r2;
     gameOver();
 }
