@@ -37,7 +37,7 @@ void gameOver(){
     if (input=="n" || input=="no"){
     }
     else{
-        cout << "\nWhat was that?\n" << endl;
+        cout << "\nI didn't understand that.\n" << endl;
     }
 }
 
@@ -48,7 +48,7 @@ void room1(){
         room2();
     }
     else {
-        cout << "\nDidn't get that.\n" << endl;
+        cout << "\nI didn't understand that.\n" << endl;
         room1();
     }
 }
