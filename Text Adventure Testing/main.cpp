@@ -17,6 +17,8 @@ void roomN();
 
 string input;
 
+/*Game starts here*/
+
 int main()
 {
     room1();
@@ -27,4 +29,13 @@ int main()
 void room1(){
     cout << r1;
     cin >> input;
+    if (input="n" || "north"){
+        roomN();
+    }
+}
+
+void roomN(){
+    cout << rN;
+    cin >> input;
+    cout >> " You lost buddy.\n Sucks to be you.\n Go try again."
 }
